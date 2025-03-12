@@ -29,8 +29,9 @@ export default function Users() {
                 {users.map((user) => (
                     <li key={user.id}>
                         {user.firstName} {user.lastName} {user.age}
-                        <button>
-                            onClick={() => handleMoreInfo(user.id)}
+                        <button
+                            onClick={() => handleMoreInfo(user.id)}>
+                                Mas info
                         </button>
                     </li>
                 ))}
